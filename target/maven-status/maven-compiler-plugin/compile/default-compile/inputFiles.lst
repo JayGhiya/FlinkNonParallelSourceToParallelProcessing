@@ -1,0 +1,3 @@
+/home/bumblebee/Documents/codeBases/QuarkusPOC/FlinkTcpSocketReaderPoc/src/main/java/com/example/tcpreader/parallelize/SplitAcrossPartitions.java
+/home/bumblebee/Documents/codeBases/QuarkusPOC/FlinkTcpSocketReaderPoc/src/main/java/com/example/tcpreader/main/TcpSocketToKafkaMain.java
+/home/bumblebee/Documents/codeBases/QuarkusPOC/FlinkTcpSocketReaderPoc/src/main/java/com/example/tcpreader/transform/TcpTransform.java

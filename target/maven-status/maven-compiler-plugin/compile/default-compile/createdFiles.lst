@@ -1,0 +1,3 @@
+com/example/tcpreader/parallelize/SplitAcrossPartitions.class
+com/example/tcpreader/transform/TcpTransform.class
+com/example/tcpreader/main/TcpSocketToKafkaMain.class
