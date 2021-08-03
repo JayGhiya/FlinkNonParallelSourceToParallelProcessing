@@ -14,11 +14,11 @@ public class TcpSocketToKafkaMain {
         StreamExecutionEnvironment streamExecutionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment();
         streamExecutionEnvironment.setParallelism(4);
         streamExecutionEnvironment.setMaxParallelism(4);
-        DataStream<String> dataStream = streamExecutionEnvironment.socketTextStream("127.0.0.1",13370,"/r");
+        DataStream<String> dataStream = streamExecutionEnvironment.socketTextStream("192.168.50.211",13370,"/r");
         System.out.println("parallelism for datastream from source is:"+dataStream.getParallelism());
         KeyedStream<String,String> keyedStream = dataStream.keyBy(new SplitAcrossPartitions());
         System.out.println("parallelism for keyedStream is:"+keyedStream.getParallelism());
-        keyedStream.map(new TcpTransform());
+        keyedStream.map(new TcpTransform()  );
         streamExecutionEnvironment.execute();
 
     }
